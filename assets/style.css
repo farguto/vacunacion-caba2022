@@ -1,0 +1,89 @@
+* {
+
+    font-family: 'Roboto';
+    
+  
+   
+   }
+
+    h1, h6, span{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+  
+   }
+    
+   p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+
+
+
+   }
+   p, h6{
+      margin-top: 3%;
+    }
+
+   h6{
+     margin-bottom: 1%;
+     display: flex;
+     justify-content: center;
+     text-align: center;
+
+   } 
+
+
+   
+   #tabla_pregunta4, #tabla_pregunta4b, #tabla_pregunta4c ,  #tabla_pregunta5, #tabla_pregunta5b, #tabla_pregunta5c, #tabla_pregunta6, #tabla_pregunta7, #tabla_pregunta8, #tabla_pregunta9, #tabla_pregunta10 {
+   
+
+    width: 50%;
+    
+
+   }
+   
+
+   #dosis-radio{
+     display: flex;
+     flex-direction: column;
+     margin-top:5%;
+     margin-left: 10%;
+     
+   }
+
+   .label{
+     margin-top: 3%;
+     margin-bottom: 3%;
+  
+    }
+    #dropdown_edad{
+      
+      width: 15%;
+
+
+    }
+
+#dropdown_edad{
+  margin-left: 5%;
+}
+
+
+
+#grafico_vacunas{
+
+  margin-right: 15%;
+  margin-left: 25%;
+  width: 50%;
+}
+
+#grafico2{
+  
+  margin-right: 15%;
+  margin-left: 25%;
+  width: 50%;
+
+}
