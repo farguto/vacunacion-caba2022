@@ -18,13 +18,12 @@
 
 # Importamos librerías
 
-
 import dash
 import dash_bootstrap_components as dbc
-from dash import dcc
-from dash import html
-from dash import dash_table
-from dash.dependencies import Input, Output
+import dash_core_components as dcc
+import dash_html_components as html
+import dash_table
+from dash.dependencies import Input, Output, State
 import pandas as pd
 import plotly.express as px
 
@@ -541,7 +540,8 @@ def update_graph_dropdown(value):
     if value == 'DOSIS_1':
         fig2 =  px.histogram(
             data_frame= datos,
-    
+            histfunc='sum',
+            orientation='h',
             x= 'DOSIS_1',
             y='GRUPO_ETARIO',
             color="GRUPO_ETARIO",
@@ -559,6 +559,8 @@ def update_graph_dropdown(value):
     elif value == 'DOSIS_2':
         fig2 =  px.histogram(
             data_frame= datos,
+            histfunc='sum',
+            orientation='h',
     
             x= 'DOSIS_2',
             y='GRUPO_ETARIO',
@@ -575,6 +577,8 @@ def update_graph_dropdown(value):
     else:
         fig2 =  px.histogram(
             data_frame= datos,
+            histfunc='sum',
+            orientation='h',
     
             x= 'DOSIS_3',
             y='GRUPO_ETARIO',
@@ -592,7 +596,7 @@ def update_graph_dropdown(value):
 
 #Ejecutar
 if __name__ == '__main__':
-    app.run_server(port=8053)
+    app.run_server()
 
 
 # %%

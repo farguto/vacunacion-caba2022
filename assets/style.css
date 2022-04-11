@@ -16,10 +16,11 @@
     
    p{
     display: flex;
-    justify-content: center;
-    text-align: center;
+    justify-content: left;
+    text-align: left;
     font-weight: bold;
     font-size: larger;
+    margin-left: 2%;
 
 
 
@@ -36,13 +37,16 @@
 
    } 
 
-
+  
    
    #tabla_pregunta4, #tabla_pregunta4b, #tabla_pregunta4c ,  #tabla_pregunta5, #tabla_pregunta5b, #tabla_pregunta5c, #tabla_pregunta6, #tabla_pregunta7, #tabla_pregunta8, #tabla_pregunta9, #tabla_pregunta10 {
    
-
-    width: 50%;
-    
+    display: flex;
+    width: 100%;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    align-items: center;
 
    }
    
